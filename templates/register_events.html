@@ -1,0 +1,23 @@
+{% extends "index.html" %}
+
+{% block title %}
+    RegisterEvent
+{% endblock %}
+
+
+{% block content %}
+    <div class="reg-div">
+        <form action="" method="post">
+            <input type='text' placeholder="event_name" name='event_name' ><br><br>
+            <select id="event_type" placeholder="event_type" name="event_type">
+                <option value="on-premises">on-premises</option>
+                <option value="virtual">virtual</option>
+            </select><br><br>
+            <input type='text' placeholder="event_desc" name='event_desc'><br><br>
+            <input type='email' placeholder="org_email" name='org_email'><br><br>
+            <input type='number' placeholder="org_num" name='org_num'><br><br>
+            <input type='number' placeholder="max_seats" name='max_seats'><br><br>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+{% endblock %}

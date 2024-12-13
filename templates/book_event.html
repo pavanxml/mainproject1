@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+
+{% block title %}
+    bookEvent
+{% endblock %}
+
+{% block content %}
+<div class="book-event-div">
+    <form action="" method="post">
+        <input type="number" placeholder="Event ID" name="event_id" required>
+        <input type="date" name="booking_date">
+        <input type="number" placeholder="Seats Required" name="seats" min="10" required>
+        <input type="email" placeholder="Contact Email" name="contact_email" required>
+        <button type="submit">Book</button>
+    </form>
+</div>
+{% endblock %}

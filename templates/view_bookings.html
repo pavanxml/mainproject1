@@ -1,0 +1,30 @@
+{% extends "index.html" %}
+
+{% block title %}
+    viewBookings
+{% endblock %}
+
+{% block content %}
+    <div class="bookings-div">
+        <table border="2">
+            <thead>
+                <tr>
+                    <td>BookingID</td>
+                    <td>EventID</td>
+                    <td>Booking Date</td>
+                    <td>Seats Req</td>
+                    <td>Contact Email</td>
+                </tr>
+            </thead>
+            <tbody>
+                {% for booking in output %}
+                    <tr>
+                    {% for row in booking %}
+                        <td>{{row}}</td>
+                    {% endfor %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
